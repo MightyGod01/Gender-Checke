@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Gender checker</title>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="gendercheck.css">
+</head>
+
+<style>
+    .dis{
+        text-transform:capitalize;
+    }
+</style>
+<body>
+    <center class="shadow">
+        <h1 class="text-danger">Gender checking system</h1>
+        <h4 >You wanna know your gender? Look no further but look down</h4>
+        <input type="text" placeholder="Enter a Name" id="userInput" class=" form-control w-50">
+        <button onclick="checkGender()" class="btn bn-gray" id="button">Check</button>
+        <div id="display" class=" dis h4  py-5 shadow w-75 mt-5"></div>
+    </center>
+
+    <script>
+        // console.log(document.getElementById("display"));
+        function checkGender(){
+            var inp = userInput.value
+            if (inp == "Samuel"|| inp =="Gaius" || inp == "Joshua" || inp == "Martins" || inp == "Abduliah"  || inp == "Daniel" || inp == "Stephen" || inp== "Jude" || inp== "Sylvester" || inp== "Temitope" || inp== "David"|| inp== "Emmanuel" || inp=="Samson" || inp=="Alfred" || inp=="Jeremiah" || inp=="Joseph" || inp=="Confidence" || inp=="Prosper" || inp=="Micheal") {
+                console.log(inp + " is a male");
+                display.innerHTML = inp + " is a male"
+            } else if(inp == "Folakemi" || inp =="Blessing"  || inp =="Testimony" || inp=="Eunice" || inp=="Oyinkansola"  || inp=="Christianah"  || inp=="Ifeoluwa" || inp=="Feyikemi"){
+                console.log(inp + " is a female " );
+                display.innerHTML = inp + " is a female "
+            } else if(inp == "Ayomide" || inp== "Femi" || inp== "Dolapo" || inp== "Favour" || inp== "Mercy" || inp== "Precious" || inp== "Timileyin" || inp=="Joy" || inp=="Damilola" || inp=="Damilare"){
+                console.log(inp+ " is a male or female");
+                display.innerHTML = inp+ " is a male or female"
+            } else if (inp==""){
+                display.innerHTML = "Wahaliah !!!  You people just they try me sha, Harby U Don Run Mad Ni"
+            } else{
+                console.log("I know you not, abi u be hermaphrodite");
+                display.innerHTML = "Ur Name Resemble Mad Name"
+            }
+        }
+    </script>
+</body>
+</html>
